@@ -18,27 +18,29 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body id="top">
-<!-- preloader area start -->
-
-<!--<div id="preloader">-->
-<!--    <div class="loader_line"></div>-->
-<!--</div>-->
-
+<!-- preloader area start-->
+<!---->
+<div id="preloader">
+    <div class="loader_line"></div>
+</div>
+<!---->
 <!--preloader area end-->
 <!-- header area start -->
+
 <?php
 include "header.php"
 ?>
 
 <!-- header area end -->
+
 <!-- slider area start -->
 <section id="home" class="slider-area parallax" data-speed="3" data-bg-image="assets/img/bg/sjorsbanner.jpg">
     <div class="container">
@@ -66,9 +68,9 @@ include "header.php"
             </h4>
         </div>
     </div>
-    <div class="txtanim1 next-section">
-        <span><a href="#about">Style Switch <strong><i class="fa fa-question-circle"></i></strong></a></span>
-    </div>
+<!--    <div class="txtanim1 next-section">-->
+<!--        <span><a href="#about">Style Switch <strong><i class="fa fa-question-circle"></i></strong></a></span>-->
+<!--    </div>-->
 </section>
 <!-- slider area end -->
 <!-- about area strat -->
@@ -85,12 +87,12 @@ include "header.php"
                     <div class="section-title">
                         <h2 class="txt2_is_show">Over Mij</h2>
                     </div>
-                    <p class="txt1-wrap"><span class="txt1">Hey! Mijn naam is Sjors Platjouw, 21 jaar en afgestudeerd voor Multi-media Design. Design en fotografie zijn passies die ik sinds kleins af aan al heb, een vader die hobby fotograaf is en een moeder die aan magazines werkt daardoor kwam ik al snel in aanmerking met de digitale wereld. </span>
+                    <p class="txt1-wrap"><span class="txt1">Hey en welkom op mijn portfolio! Mijn naam is Sjors Platjouw, 21 jaar en afgestudeerd voor Applicatie en Multimedia Ontwikkeling. Momenteel studeer ik Interaction Design aan het HKU in Utrecht Design. Naast dat doe ik ook nog aan Fotografie, een passie die ik sinds kleins af aan al heb. </span>
                     </p>
-                    <p class="txt1-wrap"><span class="txt1">Ik ben een perfectionist. Ik probeer altijd net wat creatiever of beter te zijn dan mijn concurrent. Daarom ben ik ook heel gedreven en gemotiveerd, sociaal en makkelijk in de omgang, maar daarnaast sta ik ook open voor nieuwe ervaringen en ben ik leergierig. Zo blijf ik altijd up to date met nieuwe uitingen in de digitale wereld.</span>
+                    <p class="txt1-wrap"><span class="txt1">Ik ben een perfectionist. Ik probeer altijd net wat creatiever of beter te zijn dan mijn concurrent. Daarom ben ik ook heel gedreven en gemotiveerd, sociaal en makkelijk in de omgang, maar daarnaast sta ik ook open voor nieuwe ervaringen en ben ik leergierig. Zo blijf ik altijd up to date met nieuwe uitingen en trends.</span>
                     </p>
-                    <p class="txt1-wrap"><span class="txt1">  <button type="button" class="btn btn-primary btn-round-lg btn-lg">Meer over mij</button></span>
-                    </p>
+                    <a href="about.php"><p class="txt1-wrap"><span class="txt1">  <button type="button" class="btn btn-primary btn-round-lg btn-lg">Meer over mij</button></span>
+                    </p></a>
 
                 </div>
             </div>
