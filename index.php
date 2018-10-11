@@ -1,3 +1,38 @@
+<?php
+//laat altijd 1 zien behalve als het 2 is
+//$stylesheet = 1;
+//
+//if (!isset($_GET['stylesheet']) || empty($_GET['stylesheet'])) {
+//    $stylesheet = 1;
+//}
+////geen tekst, checken of het een cijfer is
+//if (!filter_var($stylesheet, FILTER_VALIDATE_INT)) {
+//    $stylesheet = 1;
+//}
+//if ($stylesheet>2) { $stylesheet = 1;}
+//else {
+//
+//}
+//echo $stylesheet;
+
+$stylesheet = 1;
+//isset =  is er een waarde / empty = de waarde ingevuld
+if (!isset($_GET['style']) || empty($_GET['style'])) {
+    $stylesheet = 1;
+} else {
+    $stylesheet = $_GET['style'];
+}
+if (!filter_var($stylesheet, FILTER_VALIDATE_INT)) {
+    $stylesheet = 1;
+} else {
+    if ($stylesheet > 2 || $stylesheet < 1) {
+
+        $stylesheet = 1;
+    }
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -28,15 +63,17 @@
 <body id="top">
 <!-- preloader area start-->
 <!---->
-<div id="preloader">
-    <div class="loader_line"></div>
-</div>
+<!--<div id="preloader">-->
+<!--    <div class="loader_line"></div>-->
+<!--</div>-->
 <!---->
 <!--preloader area end-->
 <!-- header area start -->
 
 <?php
-include "header.php"
+
+include "header.php";
+
 ?>
 
 <!-- header area end -->
@@ -68,13 +105,14 @@ include "header.php"
             </h4>
         </div>
     </div>
-<!--    <div class="txtanim1 next-section">-->
-<!--        <span><a href="#about">Style Switch <strong><i class="fa fa-question-circle"></i></strong></a></span>-->
-<!--    </div>-->
+    <!--    <div class="txtanim1 next-section">-->
+    <!--        <span><a href="#about">Style Switch <strong><i class="fa fa-question-circle"></i></strong></a></span>-->
+    <!--    </div>-->
 </section>
 <!-- slider area end -->
 <!-- about area strat -->
 <section class="about-area" id="about">
+
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-4">
@@ -87,12 +125,16 @@ include "header.php"
                     <div class="section-title">
                         <h2 class="txt2_is_show">Over Mij</h2>
                     </div>
+                    <p><?php echo $stylesheet; ?></p>
                     <p class="txt1-wrap"><span class="txt1">Hey en welkom op mijn portfolio! Mijn naam is Sjors Platjouw, 21 jaar en afgestudeerd voor Applicatie en Multimedia Ontwikkeling. Momenteel studeer ik Interaction Design aan het HKU in Utrecht Design. Naast dat doe ik ook nog aan Fotografie, een passie die ik sinds kleins af aan al heb. </span>
                     </p>
                     <p class="txt1-wrap"><span class="txt1">Ik ben een perfectionist. Ik probeer altijd net wat creatiever of beter te zijn dan mijn concurrent. Daarom ben ik ook heel gedreven en gemotiveerd, sociaal en makkelijk in de omgang, maar daarnaast sta ik ook open voor nieuwe ervaringen en ben ik leergierig. Zo blijf ik altijd up to date met nieuwe uitingen en trends.</span>
                     </p>
-                    <a href="about.php"><p class="txt1-wrap"><span class="txt1">  <button type="button" class="btn btn-primary btn-round-lg btn-lg">Meer over mij</button></span>
-                    </p></a>
+                    <a href="about.php">
+                        <p class="txt1-wrap"><span class="txt1">  <button type="button"
+                                                                          class="btn btn-primary btn-round-lg btn-lg">Meer over mij</button></span>
+                        </p>
+                    </a>
 
                 </div>
             </div>
@@ -124,7 +166,7 @@ include "header.php"
             <div class="prt-grid marketing web col-md-4 col-sm-6">
                 <div class="prt-item">
                     <a class="expand-img" href="assets/img/portfolio/gangmaker.jpg"><img
-                            src="assets/img/portfolio/gangmaker.jpg" alt="image" height="600" width="600">></a>
+                                src="assets/img/portfolio/gangmaker.jpg" alt="image" height="600" width="600">></a>
                 </div>
             </div>
             <div class="prt-grid col-md-4 col-sm-6">
@@ -193,7 +235,7 @@ include "header.php"
                         <textarea name="msg" id="msg" placeholder="Bericht hier*"></textarea>
                         <div class="form-submit">
                             <button type="submit" name="submit" id="cnt_submit">Verstuur Bericht <i
-                                    class="fa fa-long-arrow-right"></i></button>
+                                        class="fa fa-long-arrow-right"></i></button>
                         </div>
                     </form>
                 </div>

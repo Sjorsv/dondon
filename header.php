@@ -12,7 +12,7 @@
                     <div class="main-menu">
                         <nav class="nav-menu">
                             <ul id="nav_menu">
-                                <li class="active"><a data-hover="Home" href="index.php"><span>Home</span></a></li>
+                                <li class="active"><a data-hover="Home" href="index.php?style=1"><span>Home</span></a></li>
 
                                     <li>
                                         <span class="dropdown-move">
@@ -99,11 +99,9 @@
                                                 <li class="dropdown-submenu">
                                                     <a href="#" class="dropdown-toggle2" data-toggle="dropdown2">Animatie</a>
                                                     <ul class="dropdown-menu">
-                                                        <li><a href="animatie.php">15 Animaties</a></li>
-<!--                                                        <li><a href="#">Another action</a></li>-->
-<!--                                                        <li><a href="#">Something else here</a></li>-->
-<!--                                                        <li class="divider"></li>-->
-<!--                                                        <li><a href="#">Separated link</a></li>-->
+                                                        <li><a href="animatie.php">Teken Animaties</a></li>
+                                                        <li><a href="animatie_2.php">Model Animaties</a></li>
+                                                        <li><a href="#">Pixelation Animaties</a></li>
 <!--                                                        <li class="divider"></li>-->
 <!--                                                        <li><a href="#">One more separated link</a></li>-->
                                                     </ul>
@@ -113,11 +111,8 @@
                                                     <ul class="dropdown-menu">
                                                         <li><a href="assets/hw/SjorsPlatjouw_les1.pdf">Les 1</a></li>
                                                         <li><a href="assets/hw/SjorsPlatjouw_les2.pdf">Les 2</a></li>
-<!--                                                        <li><a href="#">Something else here</a></li>-->
-<!--                                                        <li class="divider"></li>-->
-<!--                                                        <li><a href="#">Separated link</a></li>-->
-<!--                                                        <li class="divider"></li>-->
-<!--                                                        <li><a href="#">One more separated link</a></li>-->
+                                                        <li><a href="assets/hw/SjorsPlatjouw_les3.pdf">Les 3</a></li>
+
                                                     </ul>
                                                 </li>
 
